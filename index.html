@@ -10,35 +10,33 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="m-content-shrink l-content-shrink">
 
-  <h1 class="light">Want to go to Mars?</h1>
-  <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-
-
+  <h1 class="pad-t-2 gutter not-bold">Want to go to Mars?</h1>
+  <p class="gutter mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
   <form method="POST" action="https://formspree.io/FORM_ID">
     <fieldset>
-      <legend>Personal details</legend>
+      <legend class="gutter not-bold italic giga push">Personal details</legend>
 
       <div class="grid">
 
-        <div class="unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="unit xs-1 s-1 m-1 l-1-2 gutter push">
           <label for="name">Name</label>
           <input id="name" name="firstname" required>
         </div>
 
-        <div class="unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="unit xs-1 s-1 m-1 l-1-2 gutter push">
           <label for="age">Age</label>
           <input type="number" id="age" required>
         </div>
 
-        <div class="unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="unit xs-1 s-1 m-1 l-1-2 gutter push">
           <label for="email">Email</label>
           <input type="email" id="email" required>
         </div>
 
-        <div class="unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="unit xs-1 s-1 m-1 l-1-2 gutter push">
           <label for="fitness">Physical fitness</label>
           <select id="fitness" name="fitness">
             <option>Super-human</option>
@@ -50,24 +48,24 @@
 
         </div>
 
-        <div>
+        <div class="gutter">
           <label for="adress">Address</label>
-          <input id="adress" required>
+          <textarea id="adress" name="place" required></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="gutter not-bold italic giga push">Mission statement</legend>
+
+        <div class="unit xs-1 s-1 m-1 l-1-2 gutter push">
+          <label for="purpose">Why do you want to go to Mars?</label>
+          <textarea id="purpose" name="message" required></textarea>
+        </div>
+
+        <div class="unit-content-center bold">
+          <button class="btn" type="submit">Register for the trip!</button>
         </div>
       </fieldset>
 
-
-
-      <h2>Mission Statement</h2>
-
-      <div class="unit xs-1 s-1 m-1-2 l-1-2">
-        <label for="purpose">Why do you want to go to Mars?</label>
-        <textarea id="purpose" name="message" required></textarea>
-      </div>
-
-      <div>
-        <button class="btn" type="submit">Register for the trip!</button>
-      </div>
     </form>
   </body>
   </html>
